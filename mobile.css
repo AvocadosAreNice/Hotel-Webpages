@@ -1,0 +1,398 @@
+/* FRONT PAGE DESIGN */
+
+@media screen and (max-width:1500px) {
+    .centerdesign {
+        width:100%;
+        top:15%;
+    }
+    .centerdesign h1 {
+        font-size:50px;
+        margin-top:50px;
+    }
+    .centerdesign h4 {
+        font-size:30px;
+        top:25%;
+    }
+}
+@media screen and (max-width:1200px) {
+    #clicktext {
+        right:20px;
+    }
+}
+@media screen and (max-width:800px) {
+    #clicktext {
+        margin-left:40%;
+    }
+    #down {
+        margin-left:46%;
+    }
+    .second_half {
+        height:4500px;
+    }
+    .centerdesign h1 {
+        font-size:40px;
+    }
+    .centerdesign h4 {
+        font-size:25px;
+    }
+}
+@media screen and (max-width:700px) {
+    #clicktext {
+        margin-left:34%;
+    }
+    #down {
+        margin-left:45%;
+    }
+}
+
+
+/* MOBILE NAVIGATION BAR */
+
+
+.mobile {
+    position:fixed;
+    background-color:#308d99;
+    height:100%;
+    width:40%;
+    opacity:0;
+    z-index:1000;
+    display:none;
+
+    
+    animation-name:left_slide;
+    animation-duration:0.8s;
+}
+.mobile ul li a{
+    color:white;
+    text-decoration:none;
+    text-align:right;
+    font-weight:300;
+    display:inline-block;
+    position:relative;
+    padding-top: 15px;
+}
+.mobile ul {
+    list-style:none;
+    margin-top:20%;
+}
+.mobile ul li{
+    position: relative;
+    margin-left:20%;
+    margin-top:5%;
+}
+@keyframes left_slide {
+    from {transform:translatex(-400px)};
+    to {transform:translatex(0px)};
+}
+.icon {
+    position:absolute;
+    float:right;
+    right:7%;
+    color:white;
+}
+#icon {
+    display:none;
+    font-size:28px;
+}
+#close {
+    font-size:30px;
+    background-color:#308d99;
+    border:none;
+    color:white;
+}
+@media screen and (max-width: 1000px) {
+    .navigationbar {
+        width:100%;
+    }
+    .mobile {
+        opacity:1;
+        width:30%;
+    }
+    .navigationbar ul li a{
+        position:absolute;
+        display:none;
+    }
+    #icon {
+        display:block;
+        margin-top:10px;
+    }
+    #reserve {
+        float:left;
+        position:relative;
+        left:20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .mobile {
+      width:40%;
+    }
+  }
+
+
+/* ABOUT PAGE */
+
+@media screen and (max-width:1400px) {
+    .about-jarnt1 {
+        display:flex;
+    }
+    .about-text {
+        bottom:-200px;
+    }
+    .about-text2 {
+        right:50px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .about-jarnt1 {
+        display:block;
+    }
+    .second_half {
+        height:4100px;
+    }
+    .divider {
+        height:150px;
+    }
+    .text-divide {
+        width:80%;
+    }
+    .second_half h4 {
+        width:60%;
+        padding: top 30px;
+        padding: bottom 30px;
+    }
+    .about-jarnt {
+        position:relative;
+        top:100px;
+        bottom:0;
+        left:0;
+        right:0;
+        height:1500px;
+    }
+    .about-jarnt img {
+        width:90%;
+        margin-left:5%;
+        height:400px;
+        position:relative;
+        margin:0;
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+    #portrait1 {
+        margin:0;
+    }
+    #portrait2 {
+        margin-top:50px;
+        position:relative;
+        top:-180px;
+    }
+    .about-text {
+        margin:0;
+        margin-left:5%;
+        width:90%;
+        bottom:0px;
+        z-index:1;
+        height:100px;
+        margin-top:20px;
+    }
+    .about-text2 {
+        margin:0;
+        position:relative;
+        margin-left:5%;
+        width:90%;
+        bottom:0px;
+        z-index:1;
+        top:550px;
+        right:0;
+    }
+    .about-text h2 {
+        text-align:left;
+        font-size-adjust:15px;
+    }
+    .about-text2 h2 {
+        text-align:left;
+        font-size-adjust:15px;
+    }
+    .about-jarnt div h2 {
+        margin-bottom:20px;
+    }
+}
+@media screen and (max-width:800px) {
+    .about-jarnt img {
+        width:100%;
+        margin-left:0;
+    }
+}
+
+
+/* ROOMS SECTION */
+
+@media screen and (max-width:1500px) {
+    .slideshow {
+        margin-left:0;
+        width:60%;
+    }
+    .prev {
+        left:30px;
+    }
+    .next {
+        left:55%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .rooms_we_offer {
+        display:flex;
+        margin-top:200px;
+        height:600px;
+    }
+    .rooms_info {
+        position:relative;
+        top:420px;
+        width:90%;
+        margin:0;
+        left:20px;
+    }
+    .slideshow {
+        width:90%;
+        margin-left:5%;
+        height:400px;
+    }
+    .prev, .next {
+        top:175px;
+        margin:0;
+    }
+    .prev {
+        left:-85%;
+    }
+    .next {
+        left:0;
+    }
+    .rooms_more {
+        position:relative;
+        left:150px;
+        top:20px;
+        padding-left:100px;
+        padding-right:100px;
+    }
+}
+@media screen and (max-width:800px) {
+    .slideshow {
+        width:100%;
+        margin-left:0;
+    }
+}
+
+/* FACILITIES SECTION */
+
+@media screen and (max-width:1400px) {
+    #facilities {
+        width:40%;
+        height:550px;
+        margin-left:60%;
+    }
+    #facilities2 {
+        position:absolute;
+        display:none;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .offer_text {
+        width:100%;
+    }
+    .offer_text h4 {
+        position:relative;
+        bottom:180px;
+        font-size:40px;
+        text-align:center;
+        width:100%;
+        right:70px;
+    }
+    .offer_text P {
+        width:60%;
+    }
+    .offer_text p, .offer_text a {
+        position:relative;
+        top:270px;
+    }
+    .others_images {
+        width:100%;
+        height:700px;
+        right:0;
+        margin:0;
+    }
+    #facilities {
+        height:400px;
+        left:30px;
+        width:80%;
+        margin-left:0;
+    }
+}
+/* RESTAURANT SECTION */
+
+@media screen and (max-width:1400px) {
+    .restaurants {
+        margin-top:700px;
+        display:flex;
+    }
+    #res_text {
+        margin-left:40px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #restaurants {
+        position:relative;
+        height:400px;
+        left:30px;
+        width:80%;
+    }
+    #food_header {
+        position:relative;
+        bottom:600px;
+        left:50px;
+        width:100%;
+    }
+    #res_text p {
+        margin-left:240px;
+        margin-top:-375px;
+    }
+    #res_text a {
+        margin-left:240px;
+    }
+    .restaurants {
+        display:block;
+        margin-top:800px;
+    }
+}
+@media screen and (max-width:800px) {
+    .more {
+        width:250px;
+    }
+    #res_text p {
+        margin-left:120px;
+        margin-top:-375px;
+    }
+    #res_text a {
+        margin-left:120px;
+    }
+}
+
+/* FOOTER */
+
+
+@media screen and (max-width: 620px) {
+    footer {
+        text-align: center;
+        height:350px;
+    }
+
+    footer div {
+        font-size: 80%;
+        display: block;
+        height: 20%;
+    }
+}

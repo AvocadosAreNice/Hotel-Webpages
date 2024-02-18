@@ -1,0 +1,249 @@
+* {
+    text-align:center;
+    font-family:'Marcellus';
+    margin:0;
+    padding:0;
+}
+a {
+    font-family:'Poppins';
+}
+.top_half {
+    background-image:url(images/restaurant_background.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    height:500px;
+    top:0px;
+    min-width:100%;
+}
+h1 {
+    position:relative;
+    padding-top:30px;
+    padding-bottom:30px;
+    top:25%;
+    width:100%;
+    color:black;
+    font-size:27px;
+}
+h2 {
+    font-size:23px;
+}
+p {
+    font-size:18px;
+}
+.bottom_half {
+    background-color:#E9E6E1;
+}
+form {
+    position:relative;
+    bottom:375px;
+    background:#f7f4ef;
+    border:1px solid black;
+    margin-left:25%;
+    width:50%;
+    padding-top:5%;
+    padding-bottom:5%;
+    font-size:20px;
+    box-shadow: 5px 10px rgba(211, 211, 211, 0.6);
+}
+form h2 {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+form input {
+    margin-top:15px;
+    margin:8px;
+    text-align:left;
+    font-size:15px;
+    width:30%;
+    margin-bottom:10px;
+    height:25px;
+}
+form select {
+    margin-top:15px;
+    text-align:left;
+    font-size:15px;
+    width:40%;
+    margin-bottom:10px;
+    height:25px;
+}
+form label {
+    font-size:18px;
+    margin-top:15px;
+}
+textarea{
+    resize:none;
+    text-align:left;
+    font-size:15px;
+    margin:10px;
+}
+#time {
+    width:30%;
+    height:25px;
+    margin-left:1%;
+}
+#date {
+    margin-right:1%;
+}
+
+
+/* ADJUSTMENTS */
+
+#date_label {
+    position:relative;
+    right:13%;
+}
+#time_label {
+    position:relative;
+    left:13%;
+}
+#adults_label {
+    position:relative;
+    right:12%;
+}
+#children_label {
+    position:relative;
+    left:12%;
+}
+#name_input {
+    width:40%;
+}
+#phone_label {
+    position:relative;
+    right:14%;
+}
+#email_label {
+    position:relative;
+    left:7%;
+}
+
+#submit {
+    border:1px solid black;
+    width:30%;
+    text-align:center;
+    padding:8px;
+    font-size:18px;
+    background-color:#3591A0;
+    color:white;
+    height:auto;
+    font-family:'Poppins';
+    transition-duration:0.8s;
+}
+#submit:hover {
+    background-color:transparent;
+    color:black;
+}
+
+/* summary form */
+
+#summary {
+    display:none;
+    background-image:url(images/restaurant_background.jpg);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:100;
+    border:1px solid black;
+    top:0;
+    bottom:0;
+    margin:0;
+}
+.details {
+    margin-top:8%;
+    width:50%;
+    background-color:#f7f0e2;
+    height:450px;
+    margin-left:25%;
+    border:1px solid black;
+}
+#summary a {
+    position:relative;
+    top:22%;
+    color:black;
+    border:1px solid black;
+    text-decoration:none;
+    padding:10px;
+    transition-duration:0.8s;
+}
+#summary a:hover {
+    background-color:#3591A0;
+    color:white;
+}
+#userComments {
+    position:absolute;
+}
+section {
+    display:flex;
+}
+ul {
+    list-style:none;
+    margin-top:20px;
+}
+li {
+    margin-top:5px;
+    text-align:left;
+}
+.submission_window h2 {
+    margin-top:5%;
+}
+.res_details {
+    width:40%;
+    margin-left:5%;
+    margin-top:3%;
+}
+.contact_details {
+    width:40%;
+    margin-left:5%;
+    margin-top:3%;
+}
+#userComments {
+    margin-top:5px;
+    font-size:15px;
+}
+@media screen and (max-width:1000px) {
+    .details {
+        width:90%;
+        margin-left:5%;
+        height:500px;
+    }
+    #summary a {
+        top:27%;
+    }
+    form {
+        width:70%;
+        margin-left:15%;
+    }
+}
+@media screen and (max-width:700px) {
+    form input {
+        width:40%;
+    }
+    form select {
+        width:45%;
+    }
+    #time {
+        width:40%;
+    }
+    textarea {
+        width:90%;
+    }
+    #submit {
+        width:50%;
+    }
+    form {
+        width:90%;
+        margin-left:5%;
+    }
+    .details {
+        margin-top:25%;
+    }
+}
+@media screen and (max-width:900px) {
+    form {
+        width:80%;
+        margin-left:10%;
+    }
+}

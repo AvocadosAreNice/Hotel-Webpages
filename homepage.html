@@ -1,0 +1,219 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <title>Jarnt Suites | Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <link rel="icon" href="images/newlogo" type="image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<body class="entirepage">
+
+<!--NAVIGATION BAR-->
+
+<section class="navigationbar">
+    <ul>
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="../Alyssa/website.html">ROOMS</a></li>
+        <li><a href="../Navodita/allfacilities2.html">SEE & DO</a></li>
+        <li><a href="../Reese/Promotion/Promotion.html">PROMOTIONS</a></li>
+        <li><a href="../Teagan/restaurant_homepage.html.html">FOOD</a></li>
+        <li><a href="../Reese/ContactUs/ContactUs.html">CONTACT US</a></li>
+        <a class="icon" onclick="responsive()">
+        <i class="fa fa-bars" id="icon"></i></a>
+        <a href="../Alyssa/1.html" id="reserve" target="_blank">RESERVE NOW</a>
+    </ul>
+</section>
+
+
+
+<!--MOBILE NAV BAR-->
+<section class="mobile">
+    <ul>
+        <li><a href="homepage.html">HOME</a></li>
+        <li><a href="../Alyssa/website.html">ROOMS</a></li>
+        <li><a href="../Navodita/allfacilities2.html">SEE & DO</a></li>
+        <li><a href="../Reese/Promotion/Promotion.html">PROMOTIONS</a></li>
+        <li><a href="../Teagan/restaurant_homepage.html.html">FOOD</a></li>
+        <li><a href="../Reese/ContactUs/ContactUs.html">CONTACT US</a></li>
+    </ul>
+</section>
+
+<!--TOP DESIGN-->
+
+
+<div class="top_half">
+<section class="centerdesign">
+    <h4 class="centertext">JARNT SUITES</h4>
+    <h1 class="centertext">One Suite Closer<span><br>to Paradise</span></h1>
+</section>
+<span id="clicktext">Click to view more</span>
+<a href="#movingdown" id="down">&#8964</a>
+</div>
+
+<div class="divider">
+</div>
+
+
+
+<!--SECOND HALF IS HERE-->
+
+
+<section class="second_half">
+    <div class="text-divide" id="movingdown"></div>
+    <div class="about-jarnt">
+
+
+    <section class="about-jarnt1">
+        <img src="images/hotel_portrait.jpg" id="portrait1">
+        <div class="about-text">
+            <h2>OUR HISTORY</h2>
+            <p>Established in 1989, Jarnt Suites has withstood the test of time and cemented itself as the
+                ideal stay for visitors in Sentosa. Over the years, we have expanded to other countries to
+                provide the ideal resort experience globally. Notably, we have establishments in continents such
+                as Europe and North America. If you're interested to learn more about Jarnt Suites, contact us
+                and we will respond promptly.
+            </p>
+            <a class="more contact" href="../Reese/ContactUs/ContactUs.html">Contact Us</a>
+        </div>
+    </section>
+        <div class="about-text2">
+            <h2>OUR PROMOTIONS</h2>
+            <p>Indulge in various promotions initiated by Jarnt Suites. Book rooms at a steal with the many
+                packaged deals we provide or dine at unbelievably, affordable prices daily. We provide many different
+                offers on a seasonal rotation to all our guests and ensure that our promotions are always worth checking
+                out. Make your retreats more affordable by learning about all we have to offer.
+            </p>
+            <a class="more promos" href="../Reese/Promotion/Promotion.html">Learn More</a>
+        </div>
+        <img src="images/hotel_portrait2.jpg" id="portrait2">
+    </div>
+    <div class="text-divide"></div>
+
+
+
+    <!--ROOMS WE OFFER-->
+
+
+
+    <div class="text-divide"></div>
+    <div class="rooms_we_offer" id="rooms" onscroll="sliding()">
+        <section class="rooms_info">
+            <h5>TAKE A GLANCE</h5>
+            <p>Our rooms are designed to cater to the whims of all our guests.
+                Taking into account comfort, aesthetic and luxury, our selection
+                 of rooms has everything to satisfy the needs and wants of all guests.
+            </p>
+            <a class="rooms_more" href="../Alyssa/website.html">View More</a>
+        </section>
+        <div class="slideshow" id="slide1">
+            <img src="images/hotelroom1" class="cover">
+        </div>
+        <div class="slideshow" id="slide2">
+            <img src="images/hotelroom2" class="cover">
+        </div>
+        <div class="slideshow" id="slide3">
+            <img src="images/hotelroom3" class="cover">
+        </div>
+        <div class="slideshow" id="slide4">
+            <img src="images/hotelroom4" class="cover">
+        </div>
+        <div class="slideshow" id="slide5">
+            <img src="images/hotelroom5" class="cover">
+        </div>
+        <a class="prev" onclick="prevslide()">&#10094;</a>
+        <a class="next" onclick="nextslide()">&#10095;</a>
+    </div> 
+    <div class="text-divide"></div>
+
+
+
+
+
+    
+
+<!--FACILITIES, EVENTS AND RESTAURANTS-->
+
+
+
+    <section class="offer_text" id="fac_text">
+        <h4 class="facilities">IMPROVING LIFE, <br>SUITE BY SUITE</h4>
+        <p class="facilities">Jarnt Suites is a haven for all who crave the latest and refined facilities as well as
+            neverending exciting events.
+                We bring our guests relaxing spas, rejuvanating pools, and more. Explore our
+                'See & Do' page to learn more.
+        </p>
+        <a href="../Navodita/allfacilities2.html" class="more">Discover More</a>
+    </section>
+    <div class="others_images">
+        <img src="images/spa.jpg" id="facilities">
+        <img src="images/events.webp" id="facilities2">
+    </div>
+
+    <section class="restaurants">
+        <img src="images/restaurant2.png" id="restaurants">
+        <section class="offer_text" id="res_text">
+            <h4 class="food" id="food_header">DINE AT PARADISE</h4>
+            <p class="food">Dining at Jarnt Suites is an experience redefined and reimagined. Our
+                culinary options spans a diverse range of cuisines and cultures that spoils
+                our guests with choice. Delving into our gastronomic world will inspire.
+            </p>
+            <a href="../Teagan/restaurant_homepage.html.html" class="more">Dine with Us</a>
+        </section>
+    </section>
+
+
+</div>
+
+</section>
+
+<footer>
+    <h2>JARNT SUITES</h2>
+    
+    <div>
+    <ul>
+        <li>Tele No.: 0000 0000</li>
+        <li>Email: JarntSuites@email.com</li>
+        <li>123456 Nowhere Rd Weeeee Blk000 #00-000</li>
+    </ul>
+    </div>
+    
+    <div>
+    <ul>
+        <li>Rooms</li>
+        <li>Reservations</li>
+        <li>Facilities</li>
+        <li>Food and Beverages</li>
+    </ul>
+    </div>
+    
+    <div>
+    <ul>
+        <li>Events</li>
+        <li>Promotions</li>
+    </ul>
+    </div>
+    
+    <div>
+    <ul>
+        <li>Instagram</li>
+        <li>Facebook</li>
+        <li>Linkedin</li>
+        <li>Twitter</li>
+        <li>Telegram</li>
+    </ul>
+    </div>
+</footer>
+
+
+<script src="homepage.js"></script>
+
+</body>
+</html>

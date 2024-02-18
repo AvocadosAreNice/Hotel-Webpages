@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <title>Jarnt Suites | Restaurant Reservation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="restaurant_reservation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/newlogo" type="image">
+
+<!--WEBPAGE STARTS HERE-->
+
+
+<body>
+<div class="top_half">
+
+</div>
+
+
+<div class="bottom_half">
+
+
+    <!--SUMMARY WINDOW-->
+
+
+    <div class="submission_window" id="summary">
+        <div class="details">
+            <h2>SUBMISSION SUCCESSFUL</h2>
+            <p>Your Form Details:</p>
+            <section class="userDetails">
+                <div class="res_details">
+                    <h3>RESTAURANT RESERVATION</h3>
+                    <ul>
+                        <li id="chosenRes">Restaurant</li>
+                        <li id="chosenDate">Date</li>
+                        <li id="chosenTiming">Timing</li>
+                        <li id="chosenAdults">Adults</li>
+                        <li id="chosenChildren">Children</li>
+                    </ul> 
+                </div>
+                <div class="contact_details">
+                    <h3>CONTACT INFORMATION</h3>
+                    <ul>
+                        <li id="chosenName">Name</li>
+                        <li id="chosenPhone">Phone Number</li>
+                        <li id="chosenEmail">Email</li>
+                    </ul>
+                    <h3 style="margin-top:20px">COMMENTS</h3>
+                    <p id="userComments"></p>
+            </section>
+            <a href="homepage.html">Return to Home</a>
+        </div>
+    </div>
+
+
+    <form method="get" action="javascript:summary()" onsubmit="return validateSubmit()"  id="resForm">
+
+        <h1>RESTAURANT RESERVATION</h1>
+        <br><label for="restaurant_selection">Restaurant</label>
+        <br><select name="restaurant_selection" required id="restaurant">
+            <option selected="true" disabled>- Select a restaurant -</option>
+            <option>Carousel</option>
+            <option>Manhattan</option>
+            <option>Dancing Crab</option>
+            <option>Tambuah Mas</option>
+            <option>Tatsuya: Sashumi</option>
+        </select>
+
+
+        <div class="time_and_date">
+        <label for="date" id="date_label">Date</label>
+        <label for="time" id="time_label">Time</label>
+        <div class="timing_inputs">
+        <input type="date" name="date" id="date" required>
+        <select name="time" id="time" required>
+            <option selected="true" disabled>- Select a timing -</option>
+        </select>
+        </div>
+        </div>
+
+
+        <div class="seats_label">
+            <br><label for="adults" id="adults_label">Adult(s)</label>
+        <label for="children" id="children_label">Children</label>
+        </div>
+
+        <div class="seatsinput">
+        <input type="number" name="adults" required min="1" max="10" id="adults">
+        <input type="number" name="children" required min="0" max="5" id="children">
+        </div>
+
+        <h2>Contact Information</h2>
+        <br><label for="enter_name">Full Name</label>
+        <br><input type="text" name="enter_name" required placeholder="Enter your name" id="name_input">
+        <br><label for="phone_number" id="phone_label">Phone Number</label>
+        <label for="email" id="email_label">Email</label>
+        <br><input type="tel" name="phone_number" required maxlength="8" minlength="8" placeholder="1234 5678" id="phoneNum">
+        <input type="text" name="email" required maxlength="30" minlength="10" placeholder="example@gmail.com" id="finalEmail">
+        <br><label for="comment" id="comments">Comments (Optional)</label>
+        <br><textarea rows="10" cols="50" name="comment" id="textarea"></textarea>
+
+
+
+        <h2>Contact Us</h2>
+        <p><img src="images/phone.png" width="20px" height="20px"> + 65 8324 2389
+        <br><img src="images/email.jpg" width="20px" height="15px"> jarntsuites.restaurants@gmail.com</p>
+        <p id="note">Note: Reservations will be voided 
+        <br>if more than 15 minutes late.</p>
+        <br><input type="submit" value="Submit" id="submit">
+    </form>
+</div>
+</body>
+<script src="restaurant_reservation.js"></script>
+</html>
